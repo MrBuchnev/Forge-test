@@ -1,0 +1,25 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "webpack-dev-server -w",
+    "compile:sass": "node-sass -w src/sass/main.scss -o src/css/",
+    "start": "npm-run-all --parallel devserver compile:sass"
+  },
+  "author": "Andrey Buchnev",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0"
+  }
+}

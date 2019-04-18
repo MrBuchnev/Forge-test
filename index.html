@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="src/css/main.css" rel="stylesheet" type="text/css"></link>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form">
+                <!-- <h1 class="form__title">Form</h1> -->
+                <div class="form-group">
+                    <label for="email" class="form__label">Email address:</label>
+                    <input data-required="true" type="email" class="form-control form__field form__field--email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name" class="form__label">Full name:</label>
+                    <input data-required="true" type="text" class="form-control form__field form__field--name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form__label">Password</label>
+                    <input data-required="true" type="password" class="form-control form__field form__field--password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="food-select" class="form__label">Your favorite food</label>
+                    <select class="form-control form__field form__field--food" id="food-select">
+                        <option>Lasagna</option>
+                        <option>Spaghetti</option>
+                        <option>Soup</option>
+                        <option>Beefsteak</option>
+                        <option>Fish and Chips</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="food-select" class="form__label">Your favorite animal</label>
+                    <select class="form-control form__field form__field--animal" id="animal-select">
+                        <option>Dog</option>
+                        <option>Cat</option>
+                        <option>Hamster</option>
+                        <option>Giraffe</option>
+                        <option>Fish</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block form__button--submit">Submit</button>
+            </form>
+
+            <div class="modal modal__success" id="successModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Congratulations!</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Your form has been submitted</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn__close--success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal__error" id="successModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Something went wrong!</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Please check, if you have entered the correct information into the following fields:</p>
+                            <div class="errored-fields"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn__close--error" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="src/js/app.js" type="text/javascript"></script>
+    </body>
+</html>

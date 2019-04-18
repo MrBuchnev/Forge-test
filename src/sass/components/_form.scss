@@ -1,0 +1,48 @@
+.form {
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 5rem 4rem 7rem;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__label {
+        font-size: 1.6rem;
+    }
+
+    &__field {
+        font-size: 1.4rem;
+        &--email {
+            background-color: #e0faff;
+        }
+
+        &--name {
+            background-color: #aecfff;
+        }
+
+        &--password {
+            background-color: #aeb7ff;
+        }
+
+        &--food {
+            background-color: #cbaeff;
+        }
+
+        &--animal {
+            background-color: #dbaeff;
+        }
+    }
+
+    &__button {
+        &--submit {
+            margin-top: 3rem;
+            font-size: 1.6rem;
+            padding: .8rem;
+        }
+    }
+}
