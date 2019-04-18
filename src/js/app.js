@@ -1,9 +1,10 @@
 $('form').on('submit', function (event) {
-    event.preventDefault();
     var errorClass = 'errored';
     var successClass = 'success';
     var hiddenClass = 'hidden';
     var visibleClass = 'visible';
+
+    event.preventDefault();
 
     $('input, select', this).each(function () {
         var input = $(this).removeClass(errorClass).removeClass(successClass);
@@ -25,6 +26,7 @@ $('form').on('submit', function (event) {
         $('.btn__close--error').on('click', function () {
             $('.modal__error').removeClass(visibleClass);
             $('.modal__error .error-field').remove();
+            $('.' + errorClass).first().focus();
         });
     } else {
         $('.modal__success').addClass(visibleClass);
