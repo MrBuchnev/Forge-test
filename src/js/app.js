@@ -20,7 +20,7 @@ $('form').on('submit', function (event) {
         $('.modal__error').addClass(visibleClass);
 
         $('.' + errorClass).each(function() {
-            $('.modal__error .errored-fields').append('<p class="error-field">' + $(this).attr('id') + '</p>');
+            $('.modal__error .errored-fields').append('<li class="error-field">' + $(this).attr('id') + '</li>');
         });
 
         $('.btn__close--error').on('click', function () {
